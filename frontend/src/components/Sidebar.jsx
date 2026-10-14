@@ -14,8 +14,8 @@ const navigation = [
   { label: "Dashboard", to: "/", icon: LayoutDashboard, end: true },
   { label: "Scan", to: "/scan", icon: ScanLine },
   { label: "Vault", to: "/vault", icon: FolderLock },
-  // { label: "QR & Barcodes", to: "/qr", icon: QrCode },
-  // { label: "Ask Your Vault", to: "/ask", icon: MessageCircleQuestion },
+  { label: "QR & Barcodes", to: "/qr", icon: QrCode },
+  { label: "Ask Your Vault", to: "/ask", icon: MessageCircleQuestion },
   { label: "Trash", to: "/trash", icon: Trash2 },
 ];
 
