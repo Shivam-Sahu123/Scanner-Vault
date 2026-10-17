@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const authRoutes = require("./routes/auth");
 const express = require("express");
-const cors = require("cors");
+
 const helmet = require("helmet");
 const documentRoutes = require("./routes/documents");
 const cloudinary = require("./config/cloudinary");
