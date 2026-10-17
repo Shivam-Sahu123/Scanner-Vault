@@ -18,7 +18,22 @@ connectDB();
 
 // Security middleware
 app.use(helmet());
-app.use(cors());
+
+//Deployment Updated cors config:
+
+// app.use(cors()); -- OLD
+
+const cors = require("cors");
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://YOUR-VERCEL-DOMAIN.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
 
 // Parse JSON requests
 app.use(express.json());
